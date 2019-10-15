@@ -2,19 +2,15 @@
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-void print_star()
+int square(int n);
+
+int main(void)
 {
-	int i;
-	for (i=0; i<10; i++)
-	  printf("*");
+	int result;
+	result=square(5);
+	printf("%d", result);
 }
-
-int main(int argc, char *argv[])
+int square(int n)
 {
-	
-	print_star();
-	print_star();
-	print_star();
-
-	return 0;
+	return (n*n);
 }
